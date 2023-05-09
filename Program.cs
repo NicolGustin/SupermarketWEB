@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SupermarketWEB.Data;
 
 namespace SupermarketWEB
 {
@@ -12,7 +13,7 @@ namespace SupermarketWEB
             builder.Services.AddRazorPages();
 
             //Agregando el contexto SupermarketContext a la aplicación
-            builder.Services.AddDbContext<SupermarketContext>(options =>
+            builder.Services.AddDbContext<SumpermarketContext>(options =>
                  options.UseSqlServer(builder.Configuration.GetConnectionString("SupermarketDB"))
                  );
 

@@ -1,4 +1,5 @@
 ﻿using Castle.MicroKernel.SubSystems.Conversion;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SupermarketWEB.Models
 {
