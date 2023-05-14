@@ -1,4 +1,5 @@
 ﻿using Castle.MicroKernel.SubSystems.Conversion;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SupermarketWEB.Models
@@ -12,7 +13,7 @@ namespace SupermarketWEB.Models
         public decimal Price { get; set; }
         public int Stock { get; set; }
         public int CategoryId { get; set; } //Será la llave foranea
-        public Category Category { get; set; } //Propiedad de navegación
+        public ICollection<Category>? Categories { get; set; } //Propiedad de navegación
 
     }
 }

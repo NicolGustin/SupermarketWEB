@@ -8,8 +8,8 @@ namespace SupermarketWEB.Pages.Categories
 {
     public class IndexModel : PageModel
     {
-        private readonly SumpermarketContext _context;
-        public IndexModel(SumpermarketContext context)
+        private readonly SupermarketContext _context;
+        public IndexModel(SupermarketContext context)
         {
             _context = context;
         }
@@ -20,9 +20,6 @@ namespace SupermarketWEB.Pages.Categories
             {
                 Categories = await _context.Categories.ToListAsync();
             }
-        }
-        public void OnGet()
-        {
         }
     }
 }
