@@ -8,9 +8,9 @@ namespace SupermarketWEB.Pages.Products
 {
     public class IndexModel : PageModel
     {
-        private readonly SumpermarketContext _context;
+        private readonly SupermarketContext _context;
 
-        public IndexModel(SumpermarketContext context)
+        public IndexModel(SupermarketContext context)
         {
             _context = context;
         }

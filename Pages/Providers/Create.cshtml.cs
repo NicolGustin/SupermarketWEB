@@ -7,8 +7,8 @@ namespace SupermarketWEB.Pages.Providers
 {
     public class CreateModel : PageModel
     {
-        private readonly SumpermarketContext _context;
-        public CreateModel(SumpermarketContext context)
+        private readonly SupermarketContext _context;
+        public CreateModel(SupermarketContext context)
         {
             _context = context;
         }

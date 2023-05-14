@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.EntityFrameworkCore;
 using SupermarketWEB.Data;
 using SupermarketWEB.Models;
@@ -8,9 +9,9 @@ namespace SupermarketWEB.Pages.PayModes
 {
     public class EditModel : PageModel
     {
-        private readonly SumpermarketContext _context;
+        private readonly SupermarketContext _context;
 
-        public EditModel(SumpermarketContext context)
+        public EditModel(SupermarketContext context)
         {
             _context = context;
         }

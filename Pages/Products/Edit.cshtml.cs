@@ -8,9 +8,9 @@ namespace SupermarketWEB.Pages.Products
 {
     public class EditModel : PageModel
     {
-        private readonly SumpermarketContext _context;
+        private readonly SupermarketContext _context;
 
-        public EditModel(SumpermarketContext context)
+        public EditModel(SupermarketContext context)
         {
             _context = context;
         }

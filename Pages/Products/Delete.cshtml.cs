@@ -7,8 +7,8 @@ namespace SupermarketWEB.Pages.Products
 {
     public class DeleteModel : PageModel
     {
-        private readonly SumpermarketContext _context;
-        public DeleteModel(SumpermarketContext context)
+        private readonly SupermarketContext _context;
+        public DeleteModel(SupermarketContext context)
         {
             _context = context;
         }
