@@ -12,8 +12,12 @@ namespace SupermarketWEB
             // Add services to the container.
             builder.Services.AddRazorPages();
 
-            builder.Services.AddDbContext<SumpermarketContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("SupermarketDB")
+            builder.Services.AddAuthenticacion()..AddCookie("MCookieAuth", options =>
+            {
+                options.Cookie.Name = "MyCookieAuth";
+                options.LoginPath = "/Account/Login";
+            }
+            //options.UseSqlServer(builder.Configuration.GetConnectionString("SupermarketDB")
             ));
 
 
